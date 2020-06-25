@@ -1,0 +1,47 @@
+<div>
+	<form>
+		<h2>Modificar Usuario</h2>
+		<a href="main_admin.php" class="btn btn-primary"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Regresar&nbsp;&nbsp;</a>
+		<br><br><br>
+	</form>
+	
+	<form method="post" action="modificarEstudiante.php">
+		<div class="col-md-12">
+			<label>Nombres:</label>
+			<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required  value="{$nombres}">
+			<input type="hidden" name="id" id="id" class='form-control' maxlength="100" value="{$id}">
+		</div>
+		<div class="col-md-12">
+			<label>Apellidos:</label>
+			<input type="text" name="apellidos" id="apellidos" class='form-control' maxlength="100" required value="{$apellidos}">
+		</div>
+		<div class="col-md-12">
+			<label>Tipo Identificación:</label>
+			{$output}
+		</div>
+		<div class="col-md-12">
+			<label>Identificación:</label>
+			<input type="text" name="identificacion" id="identificacion" class='form-control' maxlength="100" required value="{$identificacion}">
+		</div>
+		<div class="col-md-12">
+			<label>Departamento:</label>
+			{$output2}
+		</div>
+		<div class="col-md-12">
+			<label>Ciudad:</label>
+			<input type="text" name="ciudad" id="ciudad" class='form-control' maxlength="100" required value="{$ciudad}">
+		</div>
+		<div class="col-md-12">
+			<label>Usuario:</label>
+			<input type="text" name="usuario" id="usuario" class='form-control' maxlength="100" required value="{$usuario}">
+		</div>
+		<div class="col-md-12">
+			<label>Clave:</label>
+			<input type="password" name="clave" id="clave" class='form-control' maxlength="10" required value="{$clave}">
+		</div>
+		<div class="col-md-12">
+			<button type="submit" id="btn_grabar" class="btn btn-success">&nbsp;&nbsp;Actualizar&nbsp;&nbsp;</button>	
+		</div>
+	</form>
+</div>
+
